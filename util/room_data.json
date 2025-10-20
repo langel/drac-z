@@ -15,16 +15,16 @@
 	"2": {
 		"name": "Outer Courtyard",
 		"net": {
-			"ea": 4,
+			"ea": 3,
 			"no": 7,
 			"so": 1,
-			"we": 3
+			"we": 4
 		}
 	},
 	"3": {
 		"name": "Stables",
 		"net": {
-			"ea": 2
+			"we": 2
 		}
 	},
 	"4": {
@@ -59,30 +59,30 @@
 	"8": {
 		"name": "Secret Hallway",
 		"net": {
-			"ea": 7,
-			"we": 15
+			"ea": 15,
+			"we": 7
 		}
 	},
 	"9": {
 		"name": "Foyer",
 		"net": {
-			"ea": 10,
-			"we": 13,
+			"ea": 13,
+			"we": 10,
 			"so": 7
 		}
 	},
 	"10": {
 		"name": "Library",
 		"net": {
-			"ea": 11,
-			"we": 9,
+			"ea": 9,
+			"we": 11,
 			"so": 6
 		}
 	},
 	"11": {
 		"name": "Guest Quarters",
 		"net": {
-			"we": 10,
+			"ea": 10,
 			"so": 12
 		}
 	},
@@ -102,7 +102,7 @@
 	"14": {
 		"name": "Den",
 		"net": {
-			"ea": 13,
+			"we": 13,
 			"so": 15
 		}
 	},
