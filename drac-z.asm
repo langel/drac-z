@@ -17,6 +17,7 @@ main_layout_nam:
 	include "vectors.asm"
 	include "common.asm"
 
+	include "arrows.asm"
 	include "cursor.asm"
 	include "game.asm"
 	include "state.asm"

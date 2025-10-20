@@ -6,47 +6,13 @@ cursor_init: subroutine
 
 cursor_update: subroutine
 
-	; purge sprites
-	ldx #$00
-	lda #$ef
-.sprite_purge
-	sta $200,x
-	inx
-	cpx #$20
-	bne .sprite_purge
-
-
-
-; CURRENT COMMAND
-	lda controls_d
-	and #BUTTON_DOWN
-	bne .cursor_down
-	lda controls_d
-	and #BUTTON_UP
-	bne .cursor_up
-	jmp .cursor_control_done
-.cursor_down
-	inc command_id
-	lda command_id
-	cmp #$06
-	bne .dont_reset_down
-	lda #$00
-	sta command_id
-.dont_reset_down
-	jmp .cursor_control_done
-.cursor_up
-	dec command_id
-	bpl .dont_reset_up
-	lda #$05
-	sta command_id
-.dont_reset_up
-.cursor_control_done
-
 
 ; RENDER
 
 	; get cursor color
 	lda wtf
+	asl
+	asl
 	asl
 	tax
 	lda sine_table,x
@@ -54,8 +20,20 @@ cursor_update: subroutine
 	lda #89
 	sta temp01
 	jsr shift_divide_7_into_8
+.color_set
 	lda temp00
 	sta cursor_color
+
+	lda state00
+	beq .in_command_mode
+	lda #$02
+	sta cursor_color
+.in_command_mode
+
+	; XXX we're getting real spaghetti
+	; is this the explore cursor?
+	; or is it abstracted and used 
+	; elsewhere?
 
 .command_cursor
 	lda cursor_color

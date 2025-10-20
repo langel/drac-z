@@ -75,4 +75,10 @@ room_data_hi  byte
 
 command_id    byte
 
+arrow_color   byte
+
 cursor_color  byte
+cursor_x      byte
+cursor_y      byte
+cursor_w      byte
+cursor_h      byte
