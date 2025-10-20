@@ -1,0 +1,131 @@
+{
+	"0": {
+		"name": "Road to the Castle",
+		"net": {
+			"no ": 1
+		}
+	},
+	"1": {
+		"name": "Castle Gate",
+		"net": {
+			"no": 2,
+			"so": 0
+		}
+	},
+	"2": {
+		"name": "Outer Courtyard",
+		"net": {
+			"ea": 4,
+			"no": 7,
+			"so": 1,
+			"we": 3
+		}
+	},
+	"3": {
+		"name": "Stables",
+		"net": {
+			"ea": 2
+		}
+	},
+	"4": {
+		"name": "Chapel",
+		"net": {
+			"ea": 2,
+			"so": 5
+		}
+	},
+	"5": {
+		"name": "Priest's House",
+		"net": {
+			"no": 4,
+			"we": 6
+		}
+	},
+	"6": {
+		"name": "Secret Tunnel",
+		"net": {
+			"no": 10,
+			"sw": 5
+		}
+	},
+	"7": {
+		"name": "Castle Entrance",
+		"net": {
+			"ea": 8,
+			"no": 9,
+			"so": 2
+		}
+	},
+	"8": {
+		"name": "Secret Hallway",
+		"net": {
+			"ea": 7,
+			"we": 15
+		}
+	},
+	"9": {
+		"name": "Foyer",
+		"net": {
+			"ea": 10,
+			"we": 13,
+			"so": 7
+		}
+	},
+	"10": {
+		"name": "Library",
+		"net": {
+			"ea": 11,
+			"we": 9,
+			"so": 6
+		}
+	},
+	"11": {
+		"name": "Guest Quarters",
+		"net": {
+			"we": 10,
+			"so": 12
+		}
+	},
+	"12": {
+		"name": "Soul Machine",
+		"net": {
+			"no": 10
+		}
+	},
+	"13": {
+		"name": "Dining Hall",
+		"net": {
+			"ea": 14,
+			"we": 9
+		}
+	},
+	"14": {
+		"name": "Den",
+		"net": {
+			"ea": 13,
+			"so": 15
+		}
+	},
+	"15": {
+		"name": "Dungeon",
+		"net": {
+			"no": 14,
+			"we": 8,
+			"so": 16
+		}
+	},
+	"16": {
+		"name": "Creature Cages",
+		"net": {
+			"no": 15,
+			"so": 17
+		}
+	},
+	"17": {
+		"name": "Gladiator Pit",
+		"net": {
+			"no": 16
+		}
+	}
+
+}

@@ -11,8 +11,9 @@
 	seg DATA_BANKS
 	org $08000 
 	rorg $8000
+	incbin "./assets/room_data.bin"
 main_layout_nam:
-	incbin "main_layout.nam"
+	incbin "./assets/main_layout.nam"
 	include "vectors.asm"
 	include "common.asm"
 

@@ -1,13 +1,13 @@
 
 state_explore_palette:
-	hex 0c 11 12 1c
-	hex 0c 0c 21 3c
-	hex 0c 06 16 27
-	hex 0c 0c 21 3c
-	hex 0c 0c 21 3c
-	hex 0c 0c 21 3c
-	hex 0c 0c 21 3c
-	hex 0c 0c 21 3c
+	hex 0f 05 16 2d
+	hex 0f 0c 21 3c
+	hex 0f 06 16 27
+	hex 0f 0c 21 3c
+	hex 0f 0c 21 3c
+	hex 0f 0c 21 3c
+	hex 0f 0c 21 3c
+	hex 0f 0c 21 3c
 
 
 state_explore_init: subroutine
