@@ -60,3 +60,19 @@ rng_val0   byte
 rng_val1   byte
 
 
+spr_a          EQM $0202
+spr_p          EQM $0201
+spr_x          EQM $0203
+spr_y          EQM $0200
+
+
+
+
+room_id       byte
+room_data_lo  byte
+room_data_hi  byte
+
+
+command_id    byte
+
+cursor_color  byte

@@ -1,16 +1,15 @@
 
-; 00 no room
-; 01 empty room
-; 02 key
-; 40 exit
-; ff player start
 
-map_data_00:
-	hex 40 00 00 00 00 00 00 00
-	hex 01 00 00 01 01 01 01 00
-	hex 01 00 00 01 00 00 01 01
-	hex 01 01 01 01 00 00 00 01
-	hex 00 00 01 01 00 00 00 02
-	hex 00 01 01 01 00 01 01 00
-	hex 00 01 00 00 00 01 01 01
-	hex ff 01 01 01 01 01 00 00
+state_map_load_room: subroutine
+	; a = room_id
+	sta room_id
+
+	shift_r 3
+	clc
+	adc #$80
+	sta room_data_hi
+	lda room_id
+	shift_l 5
+	sta room_data_lo
+
+	rts
